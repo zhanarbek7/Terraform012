@@ -27,4 +27,8 @@ It typically contains:
 
 7. Terraform variables
 
-8. 
+8. Terraform modules
+Terraform modules are reusable packages of configurations that simplify complex setups, promote reusability, and enable sharing within teams. They typically include `main.tf` for resources, `variables.tf` for inputs, and `outputs.tf` for outputs.
+We can import to modules other main.tfs and reuse the code from there.
+
+9. Terraform errors
