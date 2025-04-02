@@ -32,3 +32,10 @@ Terraform modules are reusable packages of configurations that simplify complex 
 We can import to modules other main.tfs and reuse the code from there.
 
 9. Terraform errors
+
+10. Terraform value imported from other terraform file in the 
+same directory
+1) feature_switch run terraform init
+2) run terraform plan -var-file="test.tfvars"
+this command injects values from the test.tfvars, where it 
+overrides the existing values
